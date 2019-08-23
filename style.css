@@ -2,6 +2,7 @@ body {
   margin: 0;
 }
 
+/* Background image and setting font globally */
 .base {
   background: url(./static/img/background.jpg) no-repeat center center ;
   -webkit-background-size: cover;
@@ -11,9 +12,50 @@ body {
   background-position: absolute;
   width:100vw;
   min-height:100vh;
+  font-family: 'Roboto', sans-serif;
 }
 
-h1 {
-  color: red;
-  font-size: 48px;
+/* Centered text box */
+.landing-wrapper{
+  position: relative;
+  padding-top: 20vh;
+  padding-bottom: auto;
+  min-height: 100vh;
+  height:100%;
+}
+
+.landing-inner{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  background-color: #cccccc;
+  transform: translate(-50%, -50%);
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  border: 3px solid rgba(0,0,0,0.1);
+  border-radius: 3px;
+}
+
+h2 {
+  color: black;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* CSS for the anchor buttons */
+.likeabutton {
+    text-decoration: none; 
+    font: menu;
+    display: inline-block; 
+    padding: 15px 0px;
+    margin: 1px 0px;
+    background: ButtonFace; 
+    color: ButtonText;
+    width:100%;
+    text-align:center;
+    border-style: solid; border-width: 2px;
+    border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight;
+}
+.likeabutton:active {
+    border-color: ButtonShadow ButtonHighlight ButtonHighlight ButtonShadow;
 }
