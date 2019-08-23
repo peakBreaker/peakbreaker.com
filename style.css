@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+}
+
+.base {
+  background: url(./static/img/background.jpg) no-repeat center center ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: absolute;
+  width:100vw;
+  min-height:100vh;
+}
+
+h1 {
+  color: red;
+  font-size: 48px;
+}
