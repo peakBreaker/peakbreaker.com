@@ -1,0 +1,198 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\Huge\textcolor{white}{\textbf{\MakeUppercase{Anders L.}}}}} % First name
+	
+	\colorbox{black}{{\Huge\textcolor{white}{\textbf{\MakeUppercase{Hurum}}}}} % Last name
+	
+	\vspace{6pt}
+	
+	{\Large Software Engineer} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{12}{Oslo, Norway}\\
+	\icon{Phone}{12}{+47 41689913}\\
+	\icon{At}{12}{\href{mailto:andershurum@gmail.com}{andershurum@gmail.com}}\\	
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{Globe}{12}{\href{https://peakbreaker.com}{peakpreaker.com}}\\
+	\icon{Github}{12}{\href{https://github.com/peakbreaker}{github.com/peakbreaker}}\\
+  %\icon{Twitter}{12}{\href{https://twitter.com/@alyxvance}{@alyxvance}}\\
+\end{minipage}
+
+\vspace{0.2cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+	% \vspace{-\baselineskip} % Required for vertically aligning minipages
+  \cvsect{Who Am I?}
+  Experienced Norwegian engineer with a background in a wide variety of technologies - from
+  embedded systems to big data products and Norwegian policy.  With a proven
+  trackrecord of excelling under pressure, managing risk in technology, and providing central infrastructure
+  - I'm excited to make a great fit data projects and teams.
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+	% \vspace{-\baselineskip} % Required for vertically aligning minipages
+  \cvsect{Key skills}
+  \textbf{Hard skills}\\
+  Python, Golang, Scala, C, ETL, Linux \& Shell scripting, Kubernetes, Spinnaker, HTML/CSS/JS, SQL, PyData stack (Pandas, numpy, scikit learn, keras, matplotlib, TensorFlow, etc), Git, CI/CD, Google Cloud Platform, Apache Spark, Apache Airflow, Apache Kafka, BigQuery, DevOps for ML
+  \\\textbf{Technical Leadership}\\
+  Agile development, effective meetings, architecture visualization, animation, time management, technical presentation, support
+
+\end{minipage}
+
+% \begin{center}
+	% \bubbles{6/vim, 6/git, 5/GCP, 3/Apache, 3/Blender3D}
+% \end{center}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+		{9/2018 -- Current}
+		{Data Engineer}
+		{Amedia Utvikling AS}
+		{Developing and maintaining Amedias Data infrastructure for big data analysis. I greatly modernised the 
+    company's ETL infrastructure through over 20000 commited lines of code on the ETL
+    codebase alone, implemented ETL jobs saving the company over 1M annual NOK in costs, and productionized
+    machine learning systems.
+    \\ \texttt{Python}\slashsep\texttt{Data}\slashsep\texttt{GCP}\slashsep\texttt{ETL}}
+	\entry
+		{2/2019 -- Current}
+		{Engineer/CEO}
+		{Hurum Engineering Services ENK}
+		{Founded my own engineering consulting company, selling hours of development
+    work parttime. The company has been VAT registered with a revenue exceeding 50 000,- NOK
+    \\ \texttt{Remote work}\slashsep\texttt{Embedded C}\slashsep\texttt{GitLab}}
+	\entry
+		{12/2016 -- 9/2018}
+		{Embedded Systems Engineer}
+		{Sensario AS}
+		{Programming of cellular modem firmware and developing embedded systems. During my time at Sensario I
+     Wrote nearly all of the comany's embedded telecommunication codebase and 
+     created multiple embedded device drivers for the company 
+     \\ \texttt{Embedded C}\slashsep\texttt{Python}\slashsep\texttt{Linux}}
+	 \entry
+		 {2016 -- 2016}
+		 {Co Founder}
+     {Råvarene}
+		 {Co Founded a Zero Waste grocery store in Bergen, Norway - financed through a successful
+      crowdfunding campaign bringing in over 230 000 NOK to the business\\ \texttt{Entrepreneurship}\slashsep\texttt{Crowdfunding}}
+	\entry
+		{2/2015 -- 9/2016}
+		{Mayors Candidate}
+    {Hole Venstre}
+    {Ran the local election as the mayorscandidate (ordforerkandidat) of my home municipality's liberal party.
+     I ran the local campaign and wrote the local political program for the term.  The local liberal party
+     received 20\% increased votes compared to the previous election\\ \texttt{Norwegian Policy}\slashsep\texttt{Politics}}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2012 -- 2015}
+		{Bachelors degree in Mechatronics}
+		{Universitetet i Agder}
+    {Active participant in the local student community during my studies - I did event organizing for the class association, volunteerily bartending 
+    at the student bar, I was elected member of the students parliament and I won a local
+    prize for entrepreneurship.}
+	% \entry
+		% {2014}
+		% {Years study in IT}
+    % {Hgskolen i Buskerud og Vestfold HBV}
+		% {Studied IT for a semester at HBV}
+	\entry
+		{2017}
+		{Nanodegree in Full Stack Web Development}
+		{Udacity}
+		{Part time outside of work, I studied webdevelopment to get a better understanding
+    of web technologies as they often play a role in most parts of technology these days.
+    The degree has given me a solid understanding of web and its underlying technologies}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Languages}
+	\textbf{Norwegian} - Native\\
+	\textbf{English} - Bilingual\\
+  \textbf{German} - Basic (A2/B1)\\
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Hobbies}
+	Traveling, learning, music, technology and games
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Open Source}
+	Though I have not yet made notable contributions to OSS, I hope to be doing so
+  in the coming years.
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
