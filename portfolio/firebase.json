@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "public": "./",
+    "site": "portfolio-peakbreaker",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
