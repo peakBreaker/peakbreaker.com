@@ -6,7 +6,7 @@ header:
     paddingY: 0
     align: center
     title:
-      - Thoughts and ideas
+      - Thinking Out Loud
     subtitle:
       - "@peakbreaker 's very own personal blog"
     titleFontSize: 44
