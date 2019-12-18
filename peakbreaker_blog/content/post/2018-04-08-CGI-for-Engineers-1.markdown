@@ -1,8 +1,8 @@
 ---
-category: Blender
+categories: Blender
 subtitle: Overview, models & texturing
 description: Overview, models and texturing
-img: covers/blender.png
+featured_image: covers/blender.png
 author: Anders
 title: CGI for Engineers Pt. 1
 finished: true

@@ -1,8 +1,8 @@
 ---
-category: Linux
+categories: Linux
 subtitle: Saving lost penguins
 description: Saving lost penguins
-img: covers/tux-1.png
+featured_image: covers/tux-1.png
 author: Anders
 title: Stuck at Terminal Island
 finished: true

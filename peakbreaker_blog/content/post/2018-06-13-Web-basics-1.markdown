@@ -1,7 +1,7 @@
 ---
-category: Web
+categories: Web
 subtitle: Webdevelopment 101
-img: covers/flask.png
+featured_image: covers/flask.png
 author: Anders
 title: Web is pretty cool
 finished: true

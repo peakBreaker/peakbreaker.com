@@ -1,7 +1,7 @@
 ---
-category: Docs
+categories: Docs
 layout: post
-img: covers/docs.png
+featured_image: covers/docs.png
 author: Anders
 tags: ['Sphinx', 'Python', 'Documentation', 'gh-pages', 'oauth', 'readthedocs', 'rtfd', 'heroku', 'cloud']
 finished: true

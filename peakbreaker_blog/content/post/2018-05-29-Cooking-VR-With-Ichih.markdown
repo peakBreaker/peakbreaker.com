@@ -1,7 +1,8 @@
 ---
-category: XR
+categories: XR
+subtitle: Experiencing Unity and VR with a friend
 layout: post
-img: covers/ichih-cover.JPG
+featured_image: covers/ichih-cover.JPG
 author: Anders
 tags: ['VR', 'OculusRift', 'Unity3D']
 finished: true

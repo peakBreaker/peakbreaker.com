@@ -1,7 +1,7 @@
 ---
-category: Golang
+categories: Golang
 layout: post
-img: covers/paalsgo.png
+featured_image: covers/paalsgo.png
 author: Anders
 tags: ['go', 'software', 'web']
 finished: false

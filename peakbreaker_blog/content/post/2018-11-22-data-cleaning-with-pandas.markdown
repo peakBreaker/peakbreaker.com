@@ -1,7 +1,7 @@
 ---
-category: data
+categories: data
 subtitle: From Personal notes on working with data
-img: covers/pandas-1.png
+featured_image: covers/pandas-1.png
 author: Anders
 title: Data Cleaning with pandas
 finished: true

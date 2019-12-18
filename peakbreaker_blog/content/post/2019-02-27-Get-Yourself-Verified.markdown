@@ -1,7 +1,7 @@
 ---
-category: SysAdmin
+categories: SysAdmin
 layout: post
-img: covers/verified.png
+featured_image: covers/verified.png
 author: Anders
 tags: ['security', 'crypto', 'gpg']
 finished: true
