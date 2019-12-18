@@ -1,0 +1,71 @@
+---
+category: Web
+subtitle: Webdevelopment 101
+img: covers/flask.png
+author: Anders
+title: Web is pretty cool
+finished: true
+date: "2018-06-13"
+layout: post
+tags: ['python', 'flask', 'web']
+---
+
+*You affect the world by what you browse.*
+
+- Tim Berners Lee, inventor of the web
+
+## Web is pretty cool
+
+The web is one of the main contributors to the internet revolution. If you've ever used a browser, or computer with an internet connection the last decade, you've probably used the web. Its quite useful and pretty cool, but how does it work? Let's take a look!
+
+## Why is the web pretty cool?
+
+Ever heard of the ".com bubble"? Yeah, it was basically a huge market crash in the late 90s because of the overhype of the internet. College kids were planning IPOs in their dorms, and investors threw money at anything with a website. It was the time where everyone could be an expert hacker by knowing XSS and basic code injection, or one could walk into a company saying "I know HTML tables" and get hired as a junior engineer on the spot. Good times indeed. Today? Not so much.
+
+![One does not simply HTML tables](/assets/img/web/html_tables_meme.png)
+
+Why is this? Well today we hardly think about the value of the internet and web, because it has soaked itself into our everyday life, but back in the 90s things like mobile phones, computers and that you could order stuff online was friggin sci-fi level technology. And it is. We do not think about how amazing these technologies are today, but it is increasingly harder to imagine a world without webservices and magic websites which can serve you personalized and highly accurate data every day, or give you magical interaction with the world. The capabilities and the vision of the internet as the neural net connecting humanity as a single brain is scarily awesome. So... stepping foot into web technology is today a bit more complex than before.
+
+So fear not - We have Python.
+
+## So what do we even mean by web?
+
+At its core, the web is actually quite simple. The main point to understand about the web is that it is basically just a system for sharing documents, HTML documents that is, through the HTTP protocol. Thats right, if youre a webdeveloper, you work with one protocol.  One. Well thats not entirely accurate - there are websockets, FTP, SSH, TLS, DB protocols and stuff - but for the most part you will work with HTTP. Oh, and Tim Berners Lee is credited as the inventor of HTTP, so he gets a quote at the top of this blogpost. Congrats Timmy!
+
+So TL;DR on what web is: A system for sharing documents through the HTTP protocol.
+
+## Lets set up a webserver
+
+This is the best part of this blogpost
+
+There is a million and more ways to implement a webserver, but due to the simplicity and readability of python and flask we will be using that to illustrate each part of the technology. So enter flask!
+
+[![Python flask]({{ site.baseurl }}/assets/img/web/flask.png)](http://flask.pocoo.org/)
+
+First we install python, you can follow the instructions in this [link](https://wiki.python.org/moin/BeginnersGuide/Download)
+
+and use the python packagemanager pip to install flask:
+
+`$ pip install flask`
+
+{{< highlight python >}}
+
+  from flask import Flask
+  app = Flask(__name__)
+
+  @app.route("/")
+  def hello():
+      return "Hello World!"
+
+  if __name__ == '__main__':
+      app.run(debug=True, port=8000)
+
+{{< /highlight >}}
+
+and run the program
+
+`$ python hello.py`
+
+Then go to http://localhost:8000 and you should see "Hello World"! Awesome!
+
+Congrats - You just set up your first webserver!
