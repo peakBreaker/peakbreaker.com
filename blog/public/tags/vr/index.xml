@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VR on PeakBlog</title>
+    <link>https://blog.peakbreaker.com/tags/vr/</link>
+    <description>Recent content in VR on PeakBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>andershurum@gmail.com (@peakbreaker)</managingEditor>
+    <webMaster>andershurum@gmail.com (@peakbreaker)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 29 May 2018 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://blog.peakbreaker.com/tags/vr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Cooking up VR with I-chih</title>
+        <link>https://blog.peakbreaker.com/post/2018-05-29-cooking-vr-with-ichih/</link>
+        <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
+        <author>andershurum@gmail.com (@peakbreaker)</author>
+        <guid>https://blog.peakbreaker.com/post/2018-05-29-cooking-vr-with-ichih/</guid>
+        <description>Just a heads up dear reader - My posts have two parts. The first part is a personal story and the second part is purely about technology and code
+&amp;ndash; If youre here just for code snippets, then scroll down &amp;ndash;
+This is I-chih (she is the one to the left)
+She is very concerned about the environment, and rightfully so - its an important issue. We first met back in 2017 at a clothe swapping party - back then it was after I opened a grocery store in Bergen, and I really needed some pants.</description>
+      </item>
+      
+    
+  </channel>
+</rss>

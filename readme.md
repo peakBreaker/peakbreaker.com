@@ -6,4 +6,4 @@ for showing off my work etc. These are static sites
 #### Deploy
 
 Runs on firebase hosting
-`$ cd <site to deploy>/firebase deploy`
+`$ firebase deploy`

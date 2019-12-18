@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rtfd on PeakBlog</title>
+    <link>https://blog.peakbreaker.com/tags/rtfd/</link>
+    <description>Recent content in rtfd on PeakBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>andershurum@gmail.com (@peakbreaker)</managingEditor>
+    <webMaster>andershurum@gmail.com (@peakbreaker)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Tue, 13 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://blog.peakbreaker.com/tags/rtfd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Scalable Documentation</title>
+        <link>https://blog.peakbreaker.com/post/2018-11-13-scalable-docs/</link>
+        <pubDate>Tue, 13 Nov 2018 00:00:00 +0000</pubDate>
+        <author>andershurum@gmail.com (@peakbreaker)</author>
+        <guid>https://blog.peakbreaker.com/post/2018-11-13-scalable-docs/</guid>
+        <description>Documentation In this entry, I am happy to be writing about something I have feelings
+for and about. Documentation is one of those core needs in the maslow pyramid
+of technology, yet far too often overlooked.
+It sounds easy, right? Just write some documents on what youre doing. Wrong,
+that attitude does not scale. Unmaintained documentation is worse than no
+documentation, and documentation accumulates the same technical dept as code,</description>
+      </item>
+      
+    
+  </channel>
+</rss>

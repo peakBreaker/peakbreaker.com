@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on PeakBlog</title>
+    <link>https://blog.peakbreaker.com/tags/blog/</link>
+    <description>Recent content in blog on PeakBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>andershurum@gmail.com (@peakbreaker)</managingEditor>
+    <webMaster>andershurum@gmail.com (@peakbreaker)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 07 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://blog.peakbreaker.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Hello, Jekyll!</title>
+        <link>https://blog.peakbreaker.com/post/2018-04-07-hello-jekyll/</link>
+        <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
+        <author>andershurum@gmail.com (@peakbreaker)</author>
+        <guid>https://blog.peakbreaker.com/post/2018-04-07-hello-jekyll/</guid>
+        <description>Hello, world! Thought it was about time I set up a blog. For those who don&#39;t know me:
+I am Anders and I think engineering, technology and learning about interesting topics is a fun way to spend a saturday afternoon - especially if I can materialize that knowledge into something useful.
+I am not going to deny that I find battery technology and software design patterns as awesome topics of discussion, that I have at some point written a program to automate my use of Tinder, and that I find Vim keybindings in Emacs is the best thing ever.</description>
+      </item>
+      
+    
+  </channel>
+</rss>

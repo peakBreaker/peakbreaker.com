@@ -1,3 +1,3 @@
-[submodule "peakbreaker_blog/themes/zzo"]
-	path = peakbreaker_blog/themes/zzo
+[submodule "blog/themes/zzo"]
+	path = blog/themes/zzo
 	url = https://github.com/zzossig/hugo-theme-zzo.git

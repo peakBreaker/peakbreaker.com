@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>software on PeakBlog</title>
+    <link>https://blog.peakbreaker.com/tags/software/</link>
+    <description>Recent content in software on PeakBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>andershurum@gmail.com (@peakbreaker)</managingEditor>
+    <webMaster>andershurum@gmail.com (@peakbreaker)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Fri, 07 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://blog.peakbreaker.com/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Golang with the Pålgang</title>
+        <link>https://blog.peakbreaker.com/post/2018-09-07-golang-with-the-paal-gang/</link>
+        <pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
+        <author>andershurum@gmail.com (@peakbreaker)</author>
+        <guid>https://blog.peakbreaker.com/post/2018-09-07-golang-with-the-paal-gang/</guid>
+        <description>Just a short intro to the basics of golang with Pål
+This is Pål (He is the normal looking one by the window)
+Pål is the superhero developer keeping the Sensario backend operational.
+I have worked Pål on his right hand side since mid 2017 and have enjoyed every
+second of it. We have been getting coffee together nearly every day, spoken
+and learned about software engineering together and discovered the magic of Vim</description>
+      </item>
+      
+    
+  </channel>
+</rss>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gpg on PeakBlog</title>
+    <link>https://blog.peakbreaker.com/tags/gpg/</link>
+    <description>Recent content in gpg on PeakBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>andershurum@gmail.com (@peakbreaker)</managingEditor>
+    <webMaster>andershurum@gmail.com (@peakbreaker)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Wed, 27 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://blog.peakbreaker.com/tags/gpg/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      
+      <item>
+        <title>Welcome to the VIP</title>
+        <link>https://blog.peakbreaker.com/post/2019-02-27-get-yourself-verified/</link>
+        <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
+        <author>andershurum@gmail.com (@peakbreaker)</author>
+        <guid>https://blog.peakbreaker.com/post/2019-02-27-get-yourself-verified/</guid>
+        <description>Being Verified Computer security in essence boils down to two things:
+ Authentication : How can we prove who you are? Authorization : What access do you have?  Implementing secure systems often comes down to good habits. This
+is one topic where the broken window theory tends to show its symptomps.
+Meaning small hacks, lazinesses and lowering of standards tend to propagate and
+eventually cause the whole system to become and unmaintainable mess.</description>
+      </item>
+      
+    
+  </channel>
+</rss>

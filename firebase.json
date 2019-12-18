@@ -1,11 +1,21 @@
 {
-  "hosting": {
-    "public": "./public/",
+  "hosting": [ {
+    "public": "landing/public",
     "site": "peakbreaker-personal",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ]
+  },
+  {
+    "public": "blog/public",
+    "site": "blog-peakbreaker",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
   }
+  ]
 }
