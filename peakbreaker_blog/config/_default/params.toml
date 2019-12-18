@@ -1,5 +1,5 @@
-logoText = "Zzo" # Logo text that appears in the site navigation bar.
-description = "The Zzo theme for Hugo example site." # for SEO
+logoText = "peakBreaker" # Logo text that appears in the site navigation bar.
+description = "Personal blog for Anders L. Hurum" # for SEO
 custom_css = [] # custom_css = ["scss/custom.scss"] and then make file at root/assets/scss/custom.scss
 custom_js = [] # custom_js = ["js/custom.js"] and then make file at root/assets/js/custom.js
 
@@ -21,13 +21,13 @@ archivePaginate = 13 # items per page
 paginateWindow = 1 # setting it to 1 gives 7 buttons, 2 gives 9, etc. If set 1: [1 ... 4 5 6 ... 356] [1 2 3 4 5 ... 356] etc
 
 # whoami: usage - home page sidebar, single page bottom of post. all values can be empty
-myname = "zzossig"
-email = "zzossig@gmail.com"
-whoami = "Web Developer"
+myname = "@peakbreaker"
+email = "andershurum@gmail.com"
+whoami = "Data Engineer"
 useGravatar = false
-location = "Seoul, Korea"
-organization = "Hugo"
-link = "https://github.com/zzossig/hugo-theme-zzo"
+location = "Oslo, Norway"
+organization = "Amedia Utvikling AS"
+link = "https://github.com/peakbreaker"
 
 # sidebar
 enableBio = true # home page sidebar
@@ -40,7 +40,7 @@ enableTocSwitch = true # single page table of contents visibility switch
 itemsPerCategory = 5 # maximum number of posts shown in the sidebar.
 
 # footer
-showPoweredBy = true # show footer text: Powered by Hugo and Zzo theme
+#showPoweredBy = true # show footer text: Powered by Hugo and Zzo theme
 showFeedLinks = true # RSS Feed 
 showSocialLinks = true # email, facebook, twitter ...
 enableLangChange = true # show button at bottom left of footer.
@@ -55,8 +55,8 @@ busuanziPagePV = true # post view count
 
 # comment
 enableComment = true
-disqus_shortname = "" 
-commento = false
+disqus_shortname = "peakbreaker-blog"
+commento = true
 
 [gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
 owner = ""              # Your GitHub ID
@@ -101,23 +101,23 @@ scriptSrc = "" # "https://isso.example.com/js/embed.min.js"
 dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
 
 [socialOptions] # if set, social icons will show up.
-email = "mailto:your@email.com"
-facebook = "http://example.org/"
-twitter = "http://example.org/"
-github = "https://github.com/zzossig/hugo-theme-zzo"
+email = "mailto:andershurum@gmail.com"
+#facebook = "http://example.org/"
+#twitter = "http://example.org/"
+github = "https://github.com/peakbreaker"
 stack-overflow = ""
 instagram = ""
 google-plus = ""
 youtube = ""
 medium = ""
 tumblr = ""
-linkedin = ""
+linkedin = "https://www.linkedin.com/in/anders-l-hurum/"
 pinterest = ""
 stack-exchange = ""
 telegram = ""
 steam = ""
 
-[donationOptions] 
+[donationOptions]
 enable = false # if set, the donation button will show up on the single page.
 alipay = "" # Alipay QR Code image (example path: images/donation/alipay-qrcode.png) and put your file at root/static/images/donation/
 wechat = "" # Wechat pay QR Code image (example path: same as above)

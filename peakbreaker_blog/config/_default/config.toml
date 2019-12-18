@@ -1,7 +1,7 @@
 
 baseURL = "https://blog.peakbreaker.com" # The URL of your site.
 languageCode = "en-us"
-title = "peakBreaker blog" # Title of your site
+title = "peakBreaker" # Title of your site
 theme = "zzo" # Name of Zzo theme folder in `themes/`.
 
 defaultContentLanguage = "en" # Default language to use (if you setup multilingual)
@@ -16,7 +16,7 @@ enableEmoji = true
 paginate = 13 # Number of items per page in paginated lists.
 rssLimit = 100
 
-googleAnalytics = ""
+googleAnalytics = "UA-117207692-1"
 
 [markup]
 [markup.goldmark]
