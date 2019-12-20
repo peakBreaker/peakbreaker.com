@@ -1,5 +1,6 @@
 ---
 categories: Golang
+description: Introducing the Golang programming language and its features!
 layout: post
 featured_image: covers/paalsgo.png
 author: Anders

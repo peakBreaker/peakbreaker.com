@@ -1,5 +1,6 @@
 ---
 categories: SysAdmin
+description: Getting awesome GPG signatures on git commits!
 layout: post
 featured_image: covers/verified.png
 author: Anders

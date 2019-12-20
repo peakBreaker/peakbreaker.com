@@ -1,5 +1,6 @@
 ---
 categories: Docs
+description: Getting started with private generated documentation using sphinx
 layout: post
 featured_image: covers/docs.png
 author: Anders

@@ -1,6 +1,6 @@
 ---
 categories: data
-subtitle: From Personal notes on working with data
+description: From Personal notes on working with data
 featured_image: covers/pandas-1.png
 author: Anders
 title: More data manipulation with pandas
