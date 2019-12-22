@@ -78,3 +78,6 @@ header:
         subtitleFontSize: 16
         spaceBetweenTitleSubtitle: 20
 ---
+
+<!-- Mailchimp signup form -->
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us4.list-manage.com","uuid":"03275a88d448a1a173eb29ccb","lid":"02eeb1b633","uniqueMethods":true}) })</script>

@@ -4,10 +4,10 @@ description: Exploring some software fundamentals
 featured_image: covers/python-1.png
 author: Anders
 title: "DRY Series: Exploring Dynamic and Static type systems"
-date: "2019-12-21"
+date: "2019-12-22"
 layout: post
-draft: true
-tags: ['software', 'concept', 'python']
+series: ["DRY Series"]
+tags: ['basics', 'software', 'concept', 'python']
 ---
 
 Type systems are inherent to every programming language, and determines a large part of the nature of how to use the programming language.  It is an important part of the programming language to understand, and full mastery brings many advantages for experienced programmers. The type system is often a double edged sword, and is a big reason for why there exists so many programming languages.
@@ -198,6 +198,8 @@ This type safety is lost in python, and we have to resort to doing asserts and t
 
 <hr>
 
+### Subscribe for more!
+
 So I hope you enjoyed this blogpost! If so, feel free to leave a comment below
-or sign up to my newsletter and/or subscribe to my channel! (coming soon)
+or [sign up to my newsletter](https://sub.peakbreaker.com/subscribe)
 

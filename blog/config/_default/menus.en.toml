@@ -5,6 +5,12 @@
   url = "about"
   weight = 1
 
+[[main]]
+  identifier = "subscribe"
+  name = "subscribe"
+  url = "https://sub.peakbreaker.com/subscribe"
+  weight = 10
+
 # [[main]]
   # identifier = "archive"
   # name = "archive"
