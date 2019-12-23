@@ -10,6 +10,8 @@ series: ["DRY Series"]
 tags: ['basics', 'software', 'concept', 'python']
 ---
 
+![Type systems header](/images/typesystems_header.gif)
+
 Type systems are inherent to every programming language, and determines a large part of the nature of how to use the programming language.  It is an important part of the programming language to understand, and full mastery brings many advantages for experienced programmers. The type system is often a double edged sword, and is a big reason for why there exists so many programming languages.
 
 ### Dynamic Python
@@ -66,6 +68,10 @@ successfully wrapped func
 We can monkeypatch in needed functionality before running it into the central library.  This is actually a "fork" for some code I used to solve a problem of concatenating objects earlier.
 
 ```python
+from mycustom_package import ObjectStorage
+
+# This is the method we want to patch into the class
+# TODO: Add to library once we're done
 def concat_chunks(self, bucket, chunk_folder, dest_filename):
    # Allright, lets combine all the files
    print('Proceeding to stitch chunks')
@@ -75,8 +81,12 @@ def concat_chunks(self, bucket, chunk_folder, dest_filename):
                      blob_names=chunks)
 
 
+# Patch in the method if its not in the class
+if not 'concat_chunks' in dir(ObjectStorage):
+    ObjectStorage.concat_chunks = concat_chunks
+
+# Running the program ..
 storage = ObjectStorage(project=PROJECT_ID)
-storage.concat_chunks = concat_chunks
 storage.concat_chunks(data['bucket'], chunk_folder, orig_filename)
 ```
 
@@ -195,6 +205,10 @@ As you can see we get a full report of the failure before we even run the progra
 So whats the big deal?  Well if we're making something more complicated than this - say for example, an operating system - its naturally way better for the program to fail when we compile it rather than when it is in the hands of the user!
 
 This type safety is lost in python, and we have to resort to doing asserts and tests instead to increase reliability of the program.
+
+![c versus python](/images/cvspython.gif)
+
+(haha, I tried doing a simple 2d animation)
 
 <hr>
 
