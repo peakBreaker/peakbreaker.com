@@ -10,7 +10,7 @@ series: ["DRY Series"]
 tags: ['basics', 'software', 'concept', 'python']
 ---
 
-![Type systems header](/images/typesystems_header.gif)
+![Type systems header](/images/anim/typesystems_header.gif)
 
 Type systems are inherent to every programming language, and determines a large part of the nature of how to use the programming language.  It is an important part of the programming language to understand, and full mastery brings many advantages for experienced programmers. The type system is often a double edged sword, and is a big reason for why there exists so many programming languages.
 
@@ -206,7 +206,7 @@ So whats the big deal?  Well if we're making something more complicated than thi
 
 This type safety is lost in python, and we have to resort to doing asserts and tests instead to increase reliability of the program.
 
-![c versus python](/images/cvspython.gif)
+![c versus python](/images/anim/cvspython.gif)
 
 (haha, I tried doing a simple 2d animation)
 

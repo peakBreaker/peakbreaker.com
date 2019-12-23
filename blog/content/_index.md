@@ -1,18 +1,18 @@
 ---
 header:
   - type: text
-    height: 200
+    height: 250
     paddingX: 50
-    paddingY: 0
+    paddingY: 50
     align: center
     title:
-      - Thinking Out Loud
+      - From Journeyman to Data Engineer
     subtitle:
-      - "@peakbreaker 's very own personal blog"
+      - Your source for getting an engineers perspective on data
     titleFontSize: 44
     subtitleFontSize: 16
     spaceBetweenTitleSubtitle: 20
-  
+
   - type: img
     imageSrc: images/header/background.jpg # your image file path: root/static/images/header/background.jpg
     imageSize: cover # auto|length|cover|contain|initial|inherit

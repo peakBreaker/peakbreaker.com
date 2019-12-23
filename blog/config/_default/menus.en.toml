@@ -1,13 +1,19 @@
 
+# [[main]]
+  # identifier = "about"
+  # name = "about"
+  # url = "about"
+  # weight = 1
+  #
 [[main]]
-  identifier = "about"
-  name = "about"
-  url = "about"
-  weight = 1
+  identifier = "contact"
+  name = "contact"
+  url = "contact"
+  weight = 6
 
 [[main]]
   identifier = "subscribe"
-  name = "subscribe"
+  name = '<span style="color:red;">subscribe</span>'
   url = "https://sub.peakbreaker.com/subscribe"
   weight = 10
 
@@ -33,11 +39,11 @@
   # name = "photo"
   # url = "gallery/photo"
 
-[[main]]
-  identifier = "posts"
-  name = "posts"
-  url = "posts"
-  weight = 4
+# [[main]]
+  # identifier = "posts"
+  # name = "posts"
+  # url = "posts"
+  # weight = 4
 
 # [[main]]
   # identifier = "notes"
