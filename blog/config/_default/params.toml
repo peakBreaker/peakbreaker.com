@@ -101,7 +101,7 @@ scriptSrc = "" # "https://isso.example.com/js/embed.min.js"
 dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
 
 [socialOptions] # if set, social icons will show up.
-email = "mailto:andershurum@gmail.com"
+email = "mailto:contact@peakbreaker.com"
 #facebook = "http://example.org/"
 #twitter = "http://example.org/"
 github = "https://github.com/peakbreaker"
