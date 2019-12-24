@@ -3,6 +3,7 @@ baseURL = "https://blog.peakbreaker.com" # The URL of your site.
 languageCode = "en-us"
 title = "peakBreaker" # Title of your site
 theme = "zzo" # Name of Zzo theme folder in `themes/`.
+enableRobotsTXT = true
 
 defaultContentLanguage = "en" # Default language to use (if you setup multilingual)
 defaultContentLanguageInSubdir = true # baseURL/en/, baseURL/kr/ ...
