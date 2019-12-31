@@ -6,10 +6,10 @@ header:
     paddingY: 50
     align: center
     title:
-      - From Journeyman to Data Engineer
+      - From Journeyman to Data Engineering
     subtitle:
       - Your source for getting an engineers perspective on data
-    titleFontSize: 44
+    titleFontSize: 38
     subtitleFontSize: 16
     spaceBetweenTitleSubtitle: 20
 
