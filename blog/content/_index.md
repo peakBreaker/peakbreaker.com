@@ -14,7 +14,7 @@ header:
     spaceBetweenTitleSubtitle: 20
 
   - type: img
-    imageSrc: images/header/background.jpg # your image file path: root/static/images/header/background.jpg
+    imageSrc: images/covers/cover.png # your image file path: root/static/images/header/background.jpg
     imageSize: cover # auto|length|cover|contain|initial|inherit
     imageRepeat: no-repeat # repeat|repeat-x|repeat-y|no-repeat|initial|inherit
     imagePosition: center # x% y%| xpos ypos| left top| center bottom| ...

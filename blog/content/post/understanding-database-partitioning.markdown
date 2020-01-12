@@ -5,7 +5,6 @@ featured_image: covers/database-1.jpg
 author: Anders
 title: Understanding Database Partitioning
 date: "2020-01-12"
-draft: true
 layout: post
 tags: ['database', 'concept', 'scalability']
 ---
