@@ -1,5 +1,5 @@
 ---
-categories: Jekyll
+categories: ['Jekyll']
 description: Things I learn, technology I think is fun - This is the place where I write
 featured_image: "covers/jekyll.png"
 author: Anders

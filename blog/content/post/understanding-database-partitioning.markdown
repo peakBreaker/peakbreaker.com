@@ -1,5 +1,5 @@
 ---
-categories: big data
+categories: ['Big Data']
 description: Ensuring scalability through splitting up our data into chunks - paritioning!
 featured_image: covers/database-1.jpg
 author: Anders

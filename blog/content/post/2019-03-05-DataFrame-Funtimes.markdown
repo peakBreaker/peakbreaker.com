@@ -1,5 +1,5 @@
 ---
-categories: data
+categories: ['Data Science']
 description: From Personal notes on working with data
 featured_image: covers/pandas-1.png
 author: Anders

@@ -1,5 +1,5 @@
 ---
-categories: software
+categories: ['Software Engineering']
 description: Exploring some software fundamentals
 featured_image: covers/python-1.png
 author: Anders

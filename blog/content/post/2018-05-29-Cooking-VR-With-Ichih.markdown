@@ -1,5 +1,5 @@
 ---
-categories: XR
+categories: ['XR']
 description: Experiencing Unity and VR with a friend
 layout: post
 featured_image: covers/ichih-cover.JPG

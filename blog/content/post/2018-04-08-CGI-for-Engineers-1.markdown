@@ -1,5 +1,5 @@
 ---
-categories: Blender
+categories: ['Blender']
 description: Overview, models & texturing
 featured_image: covers/blender.png
 author: Anders

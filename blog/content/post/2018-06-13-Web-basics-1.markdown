@@ -1,5 +1,5 @@
 ---
-categories: Web
+categories: ['Web']
 description: Webdevelopment 101
 featured_image: covers/flask.png
 author: Anders

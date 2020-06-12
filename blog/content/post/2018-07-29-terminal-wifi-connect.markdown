@@ -1,5 +1,5 @@
 ---
-categories: Linux
+categories: ['Linux']
 description: Saving lost penguins
 featured_image: covers/tux-1.png
 author: Anders
