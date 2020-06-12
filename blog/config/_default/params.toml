@@ -1,7 +1,20 @@
 logoText = "" # Logo text that appears in the site navigation bar.
-description = "Nordic software engineering and big data tech for analytics, data pipelines and actionable insights. Provided by dedicated data engineers in Oslo." # for SEO
+description = "Nordic software engineering and big data tech for analytics, data pipelines and actionable insights" # for SEO
 custom_css = [] # custom_css = ["scss/custom.scss"] and then make file at root/assets/scss/custom.scss
 custom_js = [] # custom_js = ["js/custom.js"] and then make file at root/assets/js/custom.js
+
+
+# filtering
+notAllowedTypesInHome = ["contact", "talks", "abouts", "showcase", ""] # not allowed page types in home page. type can be set in front matter or default to folder name.
+notAllowedTypesInHomeSidebar = ["about", "archive", "showcase"] # not allowed page types in home page sidebar(recent post titles).
+notAllowedTypesInArchive = ["about", "talks", "showcase"] # not allowed page types in archive page
+notAllowedTypesInHomeFeed = ["about", "archive", "contact", "talks", "showcase", "publication", "presentation", "resume", "gallery"]
+
+
+viewportSize = "normal" # widest, wider, wide, normal, narrow
+enableUiAnimation = true
+hideSingleContentsWhenJSDisabled = false
+minItemsToShowInTagCloud = 1 # Minimum items to show in tag cloud
 
 # header
 homeHeaderType = "img" # text, img, slide
@@ -17,11 +30,11 @@ enableGoToTop = true # scroll to top
 enableWhoami = true # at the end of single page
 summaryShape = "classic" # card, classic, compact
 archiveGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
-archivePaginate = 13 # items per page
+archivePaginate = 10 # items per page
 paginateWindow = 1 # setting it to 1 gives 7 buttons, 2 gives 9, etc. If set 1: [1 ... 4 5 6 ... 356] [1 2 3 4 5 ... 356] etc
 
 # whoami: usage - home page sidebar, single page bottom of post. all values can be empty
-myname = "@peakbreaker"
+myname = "Anders"
 email = "contact@peakbreaker.com"
 whoami = "Data Engineer"
 useGravatar = false
@@ -30,7 +43,7 @@ location = "Oslo, Norway"
 link = "https://github.com/peakbreaker"
 
 # sidebar
-enableBio = false # home page sidebar
+enableBio = true # home page sidebar
 enableSidebar = true # Set to false to create the full width of the content.
 enableSidebarTags = true # if you want to use tags.
 enableSidebarSeries = true
@@ -38,12 +51,13 @@ enableSidebarCategories = true
 enableToc = true # single page table of contents
 enableTocSwitch = true # single page table of contents visibility switch
 itemsPerCategory = 5 # maximum number of posts shown in the sidebar.
+sidebarPosition = "right"
 
 # footer
 #showPoweredBy = true # show footer text: Powered by Hugo and Zzo theme
 showFeedLinks = true # RSS Feed 
 showSocialLinks = true # email, facebook, twitter ...
-enableLangChange = true # show button at bottom left of footer.
+enableLangChange = false # show button at bottom left of footer.
 themeOptions = ["light", "dark"] # select options for site color theme
 #themeOptions = ["light", "dark", "hacker", "solarized", "custom"] # select options for site color theme
 
