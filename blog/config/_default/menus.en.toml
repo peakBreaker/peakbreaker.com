@@ -4,7 +4,7 @@
   name = "about"
   url = "about/peakbreaker"
   weight = 1
-  
+
 [[main]]
   identifier = "contact"
   name = "contact"
@@ -12,16 +12,17 @@
   weight = 6
 
 [[main]]
+  identifier = "microposts"
+  name = '<span style="color:CornflowerBlue;">microposts</span>'
+  url = "micropost"
+  weight = 7
+
+[[main]]
   identifier = "subscribe"
   name = '<span style="color:red;">subscribe</span>'
   url = "https://sub.peakbreaker.com/subscribe"
   weight = 10
 
-# [[main]]
-  # identifier = "archive"
-  # name = "archive"
-  # url = "archive"
-  # weight = 2
 # 
 # [[main]]
   # identifier = "gallery"
