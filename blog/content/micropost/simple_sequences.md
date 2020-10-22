@@ -152,3 +152,109 @@ This can be improved by using differencing aswell as the moving average.
 `diff_moving_avg_plus_past = series[split_time - 365:-365] + diff_moving_avg`
 `moving_average_forecast(series[split_time - 370:-360], 10) + diff_moving_avg`
 
+## Windowing
+
+### The gist
+
+The Tensorflow dataset api allows us to window easily:
+
+```python
+dataset = tf.data.Dataset.range(n)
+window_size = 5
+dataset.window(window_size, shift=1, drop_remainder=True)
+dataset = dataset.flat_map(lambda window: window.batch(window_size))
+for window in dataset:
+    print(window.numpy())
+```
+
+Can use `dataset = dataset.map(lambda window: (window[:-1], window[-1:]))` to
+get x,y datasets for doing predictions
+
+### Sequence bias
+
+Sequence bias is when the order of things can impact the selection of things.
+For example, the model may select the first in the sequence as it is more
+familiar with it.
+
+Avoid sequence bias by shuffeling the datasets
+
+`dataset = dataset.shuffle(buffer_size=10)`
+
+### Windowing helper
+
+```python
+def windowed_dataset(series, window_size, batch_size, shuffle_buffer):
+  dataset = tf.data.Dataset.from_tensor_slices(series)
+  dataset = dataset.window(window_size + 1, shift=1, drop_remainder=True)
+  dataset = dataset.flat_map(lambda window: window.batch(window_size + 1))
+  dataset = dataset.shuffle(shuffle_buffer).map(lambda window: (window[:-1], window[-1]))
+  dataset = dataset.batch(batch_size).prefetch(1)
+  return dataset
+```
+
+## Training DNNs on Sequential
+
+Continuing on from our windowed dataset, we will train a DNN on the dataset
+
+```python
+dataset = windowed_dataset(x_train, window_size, batch_size, shuffle_buffer_size)
+
+model = tf.keras.models.Sequential([
+    tf.keras.layers.Dense(10, input_shape=[window_size], activation="relu"), 
+    tf.keras.layers.Dense(10, activation="relu"), 
+    tf.keras.layers.Dense(1)
+])
+
+model.compile(loss="mse", optimizer=tf.keras.optimizers.SGD(lr=1e-6, momentum=0.9))
+model.fit(dataset,epochs=100,verbose=0)
+```
+
+And run the prediction against the validation
+```python
+forecast = []
+for time in range(len(series) - window_size):
+  forecast.append(model.predict(series[time:time + window_size][np.newaxis]))
+
+forecast = forecast[split_time-window_size:]
+results = np.array(forecast)[:, 0, 0]
+
+
+plt.figure(figsize=(10, 6))
+
+plot_series(time_valid, x_valid)
+plot_series(time_valid, results)
+tf.keras.metrics.mean_absolute_error(x_valid, results).numpy()
+```
+
+### Optimal training rate?
+Use a LearningRateScheduler callback to tweak the learning rate across the
+training.  This will let us approximate an optimized learning rate
+
+```python
+lr_schedule = tf.keras.callbacks.LearningRateScheduler(
+    lambda epoch: 1e-8 * 10**(epoch / 20))
+history = model.fit(..., callbacks=[lr_schedule])
+```
+
+### Using RNN
+
+This should be somewhat familitar by now:
+
+```python
+dataset = windowed_dataset(x_train, window_size, batch_size=128, shuffle_buffer=shuffle_buffer_size)
+
+model = tf.keras.models.Sequential([
+  tf.keras.layers.Lambda(lambda x: tf.expand_dims(x, axis=-1),
+                      input_shape=[None]),
+  tf.keras.layers.SimpleRNN(40, return_sequences=True),
+  tf.keras.layers.SimpleRNN(40),
+  tf.keras.layers.Dense(1),
+  tf.keras.layers.Lambda(lambda x: x * 100.0)
+])
+
+optimizer = tf.keras.optimizers.SGD(lr=5e-5, momentum=0.9)
+model.compile(loss=tf.keras.losses.Huber(),
+              optimizer=optimizer,
+              metrics=["mae"])
+history = model.fit(dataset,epochs=400)
+```
