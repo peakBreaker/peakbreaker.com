@@ -5,6 +5,7 @@ description: Micropost on python logging
 titleWrap: wrap
 enableSidebar: false
 enableToc: false
+tags: ['python', 'logging', 'micropost']
 ---
 
 ## Logging
