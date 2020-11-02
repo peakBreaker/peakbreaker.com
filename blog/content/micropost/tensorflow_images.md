@@ -9,8 +9,9 @@ enableToc: false
 
 ## Aahhh, Tensorflow
 
-So this is a simple python script which is useful for me to add logging to my application quickly. Just add this to a file and import it to get the right format.  Add additional logic as needed.  The formatting here works well with stackdriver logging.
+So here are some code snippets for working with images in TensorFlow.  As example here, we build a Convolutional net for image classification - though for many applications using Transfer Learning may be more applicable.
 
+Take note of the ImageDataGenerator, as it is key to preprocessing images to be used by the ML models.
 
 ### Inspecting the raw data
 
