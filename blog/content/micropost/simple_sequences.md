@@ -12,6 +12,15 @@ enableToc: false
 These are some useful code snippets for generating sequential data. Can be used
 in timeseries experiments
 
+### Plot helper
+
+```python
+def plot_series(time, series, format="-", start=0, end=None):
+    plt.plot(time[start:end], series[start:end], format)
+    plt.xlabel("Time")
+    plt.ylabel("Value")
+    plt.grid(True)
+```
 
 ### Simple trend
 
@@ -258,3 +267,19 @@ model.compile(loss=tf.keras.losses.Huber(),
               metrics=["mae"])
 history = model.fit(dataset,epochs=400)
 ```
+
+### What about LSTM?
+
+The model would look a little something like this:
+
+```python
+model = tf.keras.models.Sequential([
+  tf.keras.layers.Lambda(lambda x: tf.expand_dims(x, axis=-1),
+                      input_shape=[None]),
+    tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(32, return_sequences=True)),
+  tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(32)),
+  tf.keras.layers.Dense(1),
+  tf.keras.layers.Lambda(lambda x: x * 100.0)
+])
+```
+Remember to use return_sequences=True when stacking LSTM layers

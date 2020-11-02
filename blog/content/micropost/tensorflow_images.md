@@ -128,6 +128,6 @@ train_datagen = ImageDataGenerator(
 ### Multiclass
 
 1. Change ImageDataGenerator to use `'categorical'` instead of binary
-2. Use `categorical_crossentropy` instead of `binary_crossentropy`
+2. Use `categorical_crossentropy` instead of `binary_crossentropy`. May also
+   use `sparse_categorical_crossentropy`
 3. The output layer of the NN should have multiple nodes, and use the `'softmax'` activation
-4. 
