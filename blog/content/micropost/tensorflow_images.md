@@ -99,12 +99,12 @@ model.compile(optimizer=RMSprop(lr=0.001), loss='binary_crossentropy', metrics=[
 Fit the generator to the model
 
 ```python
-history = model.fit_generator(train_generator, 
-                              validation_data=validation_generator,
-                              epochs=3,
-                              steps_per_epoch=100,
-                              callbacks=[callback],
-                              verbose=2)
+history = model.fit(train_generator, 
+                    validation_data=validation_generator,
+                    epochs=3,
+                    steps_per_epoch=100,
+                    callbacks=[callback],
+                    verbose=2)
 ```
 
 ### Data Augmentation
