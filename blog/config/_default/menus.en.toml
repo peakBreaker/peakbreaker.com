@@ -9,7 +9,13 @@
   identifier = "contact"
   name = "contact"
   url = "contact"
-  weight = 6
+  weight = 2
+
+[[main]]
+  identifier = "showcase"
+  name =  '<span style="color:green;">showcase</span>'
+  url = "showcase"
+  weight = 3
 
 [[main]]
   identifier = "microposts"
