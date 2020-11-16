@@ -19,6 +19,8 @@ rssLimit = 100
 
 googleAnalytics = "UA-117207692-1"
 
+ignoreFiles = [ ".*/venv/.*", ".*\\.ipynb", ".*\\.gz", ".*\\.bin" ]
+
 [markup]
 [markup.goldmark]
 [markup.goldmark.renderer]
