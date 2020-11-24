@@ -14,9 +14,11 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      # Install hugo from apt
-      - name: Install Hugo
-        run: sudo apt install hugo=0.40.1-1
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.76.5'
+          extended: true
 
       # Build the hugo blog
       - name: Build
