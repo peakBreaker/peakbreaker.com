@@ -14,12 +14,15 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
+      # Install hugo from apt
       - name: Install Hugo
         run: sudo apt install hugo=0.40.1-1
 
+      # Build the hugo blog
       - name: Build
         run: cd blog && hugo && cd ..
 
+      # Deploy the blog and static page to firebase
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
