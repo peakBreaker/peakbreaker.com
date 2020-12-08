@@ -91,3 +91,59 @@ Notice the import!
 run `npx webpack` or add it to package.json script build stage to use it
 
 use `webpack serve` to run the dev server
+
+
+## With React
+
+[ref1](https://blog.usejournal.com/creating-a-react-app-from-scratch-f3c693b84658)
+
+React is the most popular SPA framework, so lets add it to our little app
+
+To do this we need to install React
+
+`$ npm install --save-dev react react-dom`
+
+And we need to install babel for transpilation
+
+`$ npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/preset-react`
+
+Proceed to changing our index.js to a simple react app:
+
+```js
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const App = () => (
+    <div><h1>Hello world!</h1></div>
+)
+
+ReactDOM.render(
+    <App/>
+    document.getElementById('root')
+)
+```
+
+In addition we need to add babel as a loader to webpack, in our `webpack.config.js` file:
+
+```js
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        loader: "babel-loader",
+        options: { presets: ["@babel/env"] }
+      }
+    ]
+  }
+};
+```
+
+And add a `.babelrc` config
+
+```js
+{
+    "presets": ["@babel/env", "@babel/preset-react"]
+}
+```
