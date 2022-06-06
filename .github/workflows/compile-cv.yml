@@ -18,7 +18,7 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: main.tex
-          working-directory: ./landing/cv
+          working_directory: ./landing/cv
         
           
       - uses: actions/upload-artifact@v2
