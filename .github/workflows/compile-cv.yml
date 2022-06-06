@@ -1,0 +1,27 @@
+name: compile cv pdf
+
+on:
+  push:
+    branches:
+      - master  # Set a branch to deploy
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        working-directory: ./landing/cv
+        with:
+          root_file: main.tex
+          
+      - uses: actions/upload-artifact@v2
+        working-directory: ./landing/cv
+        with:
+          name: PDF
+          path: main.pdf
